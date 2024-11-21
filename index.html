@@ -144,6 +144,37 @@ hr {
     .quick-link li{
     margin-right: 0px;
 }
+}@keyframes type {
+    from {
+        width: 0;
+    }
+    to {
+        width: 300px;
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.role {
+   
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    width: 0;
+    font-size: 18px;
+    animation: type 8s steps(30, end)  infinite , blink 0.7s step-end infinite;
+}
+
+.text-box {
+    width: fit-content;
+    margin: 0;
 }
 
     </style>
@@ -203,9 +234,10 @@ hr {
             <div class="col-md-6 col-12 justify-content-center d-flex flex-column ">
              <h1 class="fw-bolder" style="line-height: 52px; font-size: 48px; color: #FF6F00; letter-spacing: 1px;">He<span class="text-white">llo</span>,</h1>
              <h1 class="fw-bolder" style="line-height: 52px; font-size: 48px; color: #FFffff; letter-spacing: 0px; margin-top: 10px;" ><span style="color: #FF6F00;">I</span>'<span style="color: #FF6F00;">m</span> Surendra kumar R<span style="color: #FF6F00;">.</span></h1>
-             <h2 style="line-height: 52px; font-size: 26px; color: #ffff; letter-spacing: 2px;">Mean Stack Developer</h2>
-             <div style="margin-top: 30px;">
-             <a href="Routhu_Surendra_kumar_Resume_frontend.docx" class="download-cv text-decoration-none" download style="background-color: #FF6F00; color: #FFFFFF; padding: 10px; border-radius: 10px; margin-top: 30px; font-weight: 710; font-size: 18px;">
+             <div class="text-box">
+             <h2 style="line-height: 52px; font-size: 26px; color: #ffff; letter-spacing: 2px;" class="role"> <span style="color: #FF6F00;">F</span>ull  <span style="color: #FF6F00;">S</span>tack <span style="color: #FF6F00;">D</span>eveloper</h2>
+             </div>  <div style="margin-top: 30px;">
+             <a href="Routhu_Surendra_kumar_Resume.pdf" class="download-cv text-decoration-none" download style="background-color: #FF6F00; color: #FFFFFF; padding: 10px; border-radius: 10px; margin-top: 30px; font-weight: 710; font-size: 18px;">
                 Download CV <i class="fas fa-download"></i>
             </a>
         </div>
@@ -223,7 +255,7 @@ hr {
                 <div class="col-md-4 mb-4">
                     <h5>About Me</h5>
                     <p>
-                        Routhu Surendra Kumar is a passionate MEAN Stack Developer, dedicated to delivering high-quality web applications, learning new technologies, and enhancing user experiences for business success.
+                        Routhu Surendra Kumar is a passionate Full Stack Developer, dedicated to delivering high-quality web applications, learning new technologies, and enhancing user experiences for business success.
                     </p>
                   
                 </div>
@@ -236,7 +268,7 @@ hr {
                         <li><a href="projects.html" class="text-white text-decoration-none"><i class="fas fa-briefcase me-2"></i>Projects</a></li>
                         <li><a href="contact.html" class="text-white text-decoration-none"><i class="fas fa-envelope me-2"></i>Contact</a></li>
                         <li><a href="internship.html" class="text-white text-decoration-none"><i class="fas fa-laptop me-2"></i>Internship</a></li>
-                        <li><a href="Routhu_Surendra_kumar_Resume_frontend.docx" class="text-white text-decoration-none"><i class="fas fa-file-alt me-2"></i>Resume</a></li>
+                        <li><a href="Routhu_Surendra_kumar_Resume.pdf" class="text-white text-decoration-none"><i class="fas fa-file-alt me-2"></i>Resume</a></li>
                     </ul>
                 </div>
     
